@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>plotter-app-seed-angular2</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+
+	<base href=".">
+  <script>
+    (function() {
+      window['_app_base'] = '/' + window.location.pathname.split('/')[1];
+    })();
+  </script>
+
+	<script src="//d3js.org/d3.v3.min.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<app-root>Loading...</app-root>
+</body>
+
+<script>
+  window.plotterPathManifest = {
+    'http://localhost:9000': {
+      'home': 'http://localhost:9000',
+      'plotter-view-samples-angular2': 'http://localhost:9010',
+      'plotter-view-lab-angular2': 'http://localhost:9020',
+      'plotter-view-aspnet-core-angular2': 'http://localhost:9050'
+    },
+
+    'https://datumgeek.github.io/plotter-app-seed-angular2': {
+      'home': 'https://datumgeek.github.io/plotter-app-seed-angular2',
+      'plotter-view-samples-angular2': 'https://datumgeek.github.io/plotter-view-samples-angular2',
+      'plotter-view-lab-angular2': 'https://datumgeek.github.io/plotter-view-lab-angular2'
+    }
+  }
+
+  for (var property in window.plotterPathManifest) {
+    if (window.plotterPathManifest.hasOwnProperty(property)) {
+        if (document.URL.startsWith(property)) {
+          window.plotterPaths = window.plotterPathManifest[property];
+        }
+    }
+  }
+  
+  if (!window.plotterPaths) {
+    alert('fatal error: app is running on unknown host.');
+  }
+
+</script>
+
+
+<!-- 1. Configure and load ESRI libraries -->
+<script>
+      window.dojoConfig = {
+        async: true,
+        paths: window.plotterPaths
+        
+        //{ views: 'http://localhost:9000/src/views' }
+      };
+  </script>
+<script src="//js.arcgis.com/3.16/"></script>
+
+<script>
+
+  require(["dojo/ready"], function(ready){
+    ready(function(){
+      // This function won't run until the DOM has loaded and other modules that register have run.
+
+      window.plotter = {
+        define: window.define
+      };
+
+      require([plotterPaths['home'] + "/dist/Vendor.js", plotterPaths['home'] + "/dist/Bundle.js"], function (vendor, main) {
+        window.plotter.start();
+      });
+
+    });
+  });
+</script>
+
+</html>

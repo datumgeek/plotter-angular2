@@ -1,0 +1,11 @@
+{
+    "locked": true,
+    "uniqueId": "pak-a",
+    "views": [
+        {
+            "uniqueId": "view-a",
+            "pane": "main",
+            "moduleUrl": "http://plotter.github.io/platform/paks/pak-01/views/view1"
+        }
+    ]
+}

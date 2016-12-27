@@ -1,0 +1,44 @@
+{
+    "locked": true,
+    "uniqueId": "session-03",
+    "activePaks": [
+        {
+            "locked": true,
+            "uniqueId": "a-pak1",
+            "pakHostId": "pak-host-01",
+            "pakId": "pak-01",
+            "viewInstances": [
+                {
+                    "uniqueId": "vi-06",
+                    "title": "State Taxes",
+                    "viewId": "view3",
+                    "paneType": "nav",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "StateTaxesComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+                , {
+                    "uniqueId": "vi-09",
+                    "title": "State Taxes",
+                    "viewId": "view3",
+                    "paneType": "main",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "StateTaxesComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+                , {
+                    "uniqueId": "vi-09",
+                    "title": "State Taxes",
+                    "viewId": "view3",
+                    "paneType": "header",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "HeaderBarComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "plotter-shell-angular2",
+  "version": "0.2.13",
+  "license": "MIT",
+  "private": false,
+    "devDependencies": {
+    "plotter-shell-model": "0.1.4"
+    }
+
+}

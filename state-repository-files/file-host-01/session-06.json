@@ -1,0 +1,97 @@
+{
+    "locked": true,
+    "uniqueId": "session-05",
+    "activePaks": [
+        {
+            "locked": true,
+            "uniqueId": "a-pak1",
+            "pakHostId": "pak-host-01",
+            "pakId": "pak-01",
+            "viewInstances": [
+                {
+                    "uniqueId": "vi-07",
+                    "title": "Top Ten Wind Farms",
+                    "viewId": "view3",
+                    "paneType": "nav",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "WindFarmTopTenComponent",
+                    "state": { "projectid": "4573" },
+                    "hideClose": true
+                }
+                , {
+                    "uniqueId": "vi-07",
+                    "title": "Tree Map",
+                    "viewId": "view3",
+                    "paneType": "nav",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "TreemapComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-07",
+                    "title": "Top Ten Wind Farms",
+                    "viewId": "view3",
+                    "paneType": "main",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "WindFarmTopTenComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+                , {
+                    "uniqueId": "vi-07",
+                    "title": "Tree Map",
+                    "viewId": "view3",
+                    "paneType": "alt",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "TreemapComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-07a",
+                    "title": "Sunburst",
+                    "viewId": "view3a",
+                    "paneType": "main",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "SunburstComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-09",
+                    "title": "Splitter",
+                    "viewId": "splitter3",
+                    "paneType": "alt",
+                    "cmodule": "plotter-view-lab-angular2/views/viewLab.module",
+                    "component": "LeftRightSplitterComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-10",
+                    "title": "Splitter Tester",
+                    "viewId": "splitter4",
+                    "paneType": "alt",
+                    "cmodule": "plotter-view-lab-angular2/views/viewLab.module",
+                    "component": "SplitterTesterComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-11",
+                    "title": "Up Down Splitter",
+                    "viewId": "splitter5",
+                    "paneType": "alt",
+                    "cmodule": "plotter-view-lab-angular2/views/viewLab.module",
+                    "component": "UpDownSplitterComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+                , {
+                    "uniqueId": "vi-12",
+                    "title": "Up Down Splitter Tester",
+                    "viewId": "splitter6",
+                    "paneType": "alt",
+                    "cmodule": "plotter-view-lab-angular2/views/viewLab.module",
+                    "component": "UpDownSplitterTesterComponent",
+                    "state": { "a": "hello, world (three)" }
+                }
+            ]
+        }
+    ]
+}

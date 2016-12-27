@@ -1,0 +1,12 @@
+{
+    "locked": true,
+    "uniqueId": "myId",
+    "pakRepositories": [
+        {
+            "locked": true,
+            "uniqueId": "pak-host-02",
+            "pakRepositoryType": "File",
+            "path": "pak-repository-files"
+        }
+    ]
+}

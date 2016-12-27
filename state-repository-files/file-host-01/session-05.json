@@ -1,0 +1,34 @@
+{
+    "locked": true,
+    "uniqueId": "session-05",
+    "activePaks": [
+        {
+            "locked": true,
+            "uniqueId": "a-pak1",
+            "pakHostId": "pak-host-01",
+            "pakId": "pak-01",
+            "viewInstances": [
+                {
+                    "uniqueId": "vi-06",
+                    "title": "Top Ten Wind Farms",
+                    "viewId": "view3",
+                    "paneType": "nav",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "WindFarmTopTenComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+                , {
+                    "uniqueId": "vi-06",
+                    "title": "Top Ten Wind Farms",
+                    "viewId": "view3",
+                    "paneType": "main",
+                    "cmodule": "plotter-view-samples-angular2/views/viewSamples.module",
+                    "component": "WindFarmTopTenComponent",
+                    "state": { "a": "hello, world (three)" },
+                    "hideClose": true
+                }
+            ]
+        }
+    ]
+}
